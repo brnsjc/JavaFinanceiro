@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml"
 xmlns:h="http://xmlns.jcp.org/jsf/html"
-xmlns:f="http://xmlns.jcp.org/jsf/html/core">
+xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -23,11 +23,12 @@ xmlns:f="http://xmlns.jcp.org/jsf/html/core">
 			</h:inputText>
 			
 			
-			<!--  <h:outputLabel value="Data Nascimento:" for="data"/>
+			 <h:outputLabel value="Data Nascimento:" for="data"/>
+			 
 				<h:inputText id="data" label="Data Nascimento" value="#{usuarioBean.usuario.nascimento}"
 					size="10" required="true" maxlength="10">
-					<f:convertDateTime dateStyle="medium"/>
-				</h:inputText>-->
+					<f:convertDateTime pattern="dd/MM/YY"/>
+				</h:inputText>
 				
 			<h:outputLabel value="Celular:" for="celular"/>
 				<h:inputText id="celular" label="celular" value="#{usuarioBean.usuario.celular}">

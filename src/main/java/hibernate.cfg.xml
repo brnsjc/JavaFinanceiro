@@ -8,23 +8,6 @@
          org.hibernate.dialect.MySQL5InnoDBDialect
       </property>
       
-      <property name = "connection.driver_class">
-         com.mysql.jdbc.Driver
-      </property>
-      
-      <!-- Assume test is the database name -->
-      
-      <property name = "connection.url">
-         jdbc:mysql://localhost/teste
-      </property>
-      
-      <property name = "connection.username">
-         bruno
-      </property>
-      
-      <property name = "connection.password">
-         @Ubuntubruno15
-      </property>
       
       <property name="current_session_context_class">
       	thread
@@ -33,6 +16,8 @@
       <property name="hibernate.hbm2ddl.auto">
       	update
       </property>
+      
+      <property name="connection.datasource">java:/comp/env/jdbc/teste</property>
       
       <!-- List of XML mapping files -->
       <mapping class = "br.com.web.conexao.entidades.Categoria"/> 
